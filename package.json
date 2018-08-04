@@ -4,7 +4,6 @@
   "private": true,
   "dependencies": {
     "axios": "^0.18.0",
-    "jest": "^23.4.2",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
     "react-scripts": "1.1.4"
@@ -12,7 +11,32 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
+    "test": "jest",
     "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.5",
+    "babel-jest": "^22.4.3",
+    "babel-loader": "^7.1.4",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "jest": "^23.4.2",
+    "react-test-renderer": "^16.3.2"
+  },
+  "jest": {
+    "testURL": "http://localhost/",
+    "moduleNameMapper": {
+      "^.+\\.s?css$": "<rootDir>/__jest__/stub.js"
+    },
+    "transform": {
+      "^.+\\.jsx?$": "babel-jest"
+    },
+    "setupFiles": [
+      "raf/polyfill",
+      "<rootDir>/__jest__/setup.js"
+    ]
   }
 }
