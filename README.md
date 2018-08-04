@@ -1,6 +1,6 @@
 # NASA Search
 
-Front end Tech test based on this [brief](https://jsainsburyplc.github.io/front-end-test/). Utilises the [NASA Image and Video Library](https://api.nasa.gov/api.html#MarsPhotos) API.
+Front end Tech test based on this [brief](https://jsainsburyplc.github.io/front-end-test/). Utilises the [NASA Image and Video Library](https://api.nasa.gov/api.html#Images) API.
 
 Built using `create-react-app`.
 
